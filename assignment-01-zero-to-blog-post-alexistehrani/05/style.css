@@ -1,0 +1,63 @@
+article {
+    background-color:  rgba(207, 7, 23, 0.815);
+    display: grid;
+    grid-template-areas: "title title"
+                         "about side"
+                         "sources sources";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    gap:1px;              
+    color: yellow;         
+}
+
+header { 
+    background-color: #fdd700;
+    grid-area: title; 
+    text-align: center;
+    border-color: rgb(90, 2, 2); 
+    border-width: 10px; 
+    border-style: groove;
+    color: black; 
+}
+
+section.main {
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-area: about; 
+    
+}
+
+section img {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;           
+    align-items:right; 
+    max-width: 15rem;
+    float: right;
+    margin-left: 5px;
+    grid-area: side;
+    max-width: 80%; 
+    border: 1px solid rgb(255, 196, 0);
+    border-radius: 0.5px;
+}
+
+section.sidebar{
+    grid-area: side; 
+    display: flex;
+    object-fit: contain;
+    align-content:flex-end;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section.sources {
+    background-color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px; 
+    grid-area: sources; 
+    border-color: blue;
+    border-width: 10px; 
+    border-style: groove;
+    color: white; 
+}

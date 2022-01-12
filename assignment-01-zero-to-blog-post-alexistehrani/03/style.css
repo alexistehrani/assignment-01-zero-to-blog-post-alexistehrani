@@ -1,0 +1,62 @@
+html {
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+main {
+    border: 2px black solid;
+    padding: 10px;  
+    max-width: 50rem;                    
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: crimson;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flow-root;
+    min-height: 5rem;
+}
+
+article {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flow-root;
+}
+
+article img {
+    max-width: 15rem;
+    float: left;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    margin-right: 5px;
+
+}
+
+
+footer {
+    /* please don't change these existing values; you will have 
+       plenty of chance to play with flex in the next problem */
+    display: flex; 
+    -ms-flex-order: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: crimson;
+    min-height: 5rem;
+}
+
+button {
+    /* this one is free! */
+    min-width: 5rem;
+}
+.button {
+    
+}
